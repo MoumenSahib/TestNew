@@ -8,5 +8,8 @@ Updates on System needed:
 7-Check why Fee Collection Does not return any value.
 8-Setup project.
 9-Add bulk data import.
+10-recreate the assymetric key.
+12-Change Queries to secure one.
+
 
 
