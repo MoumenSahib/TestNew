@@ -10,6 +10,9 @@ Updates on System needed:
 9-Add bulk data import.
 10-recreate the assymetric key.
 12-Change Queries to secure one.
+13-make documentation for the software.
+14-do change the payment schedule in case of real estate bank.
+
 
 
 
