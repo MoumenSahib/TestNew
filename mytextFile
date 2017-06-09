@@ -56,3 +56,14 @@ To Create new Dir and move file from old to new use this :
 >> git mv 'oldFile' 'newDir'/'newfile'
 
 
+If you want to know your project url ...
+>> cat .git/config
+
+to start new project on github or connecting to the remote server.
+>> git remote add origin https://wdfldjfldjfdlf.
+
+
+to disconnect from remote server 
+>> git remote rm 'name of project' (origin)
+
+
