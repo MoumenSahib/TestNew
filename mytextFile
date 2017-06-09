@@ -1,0 +1,37 @@
+Switching between accounts in github.
+1-git config --global user.name "YourUserName"
+2-git config --global user.email "YourUserEmail"
+3-check it it changes the order of your new account.... through git config --global --list.
+
+
+
+Adding a file to GitHub instruction:
+1- Create a repo at git account.
+2- Create a folder in your desktop.or any where else..
+3- use git add . to add the files into your repo.
+4- use git commit -m "Your message" ... to commit the changes...
+5- you can use git log ... to see the messages and logs you did to a certain repo.
+6- you case use git log with some attribute like : 
+      git log --author ="yourAuthorName" .... to search logs via author.
+      git log --until =2017-05-05        .... to search logs via until date.
+      git log --since =2017-05-05	 .... to search logs via since date.
+      git log --grep "someTest"          .... to search logs via message find certain commit name message.
+
+
+
+
+Reaching to the CheckSum:
+
+1- go to your project of git :
+   cd Desktop >> cd project >> cd .git (to reach git) >> cd refs/heads >> cat master ... you will find the last pointer you reached.
+
+
+
+git status.... this command will show you the status of the tracked files in your repo.
+
+
+To push files to repo ... 
+starts with knowing the name of the repo and link it with your working files.
+1-git remote add origin "URL"
+2-git remote -v
+3-git push origin master
