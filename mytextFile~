@@ -43,5 +43,8 @@ To get what last changes are like below :
 This command will show you only the changes in the working ... it would never shows the changes in the repo or in the stage.
 
 
+To Remove File from repo.
+1-git rm 'filename'
+..first you have to add it and committed then you can delete it.. but this will delete the file from repo and from working forever.
 
 

@@ -47,4 +47,7 @@ To Remove File from repo.
 1-git rm 'filename'
 ..first you have to add it and committed then you can delete it.. but this will delete the file from repo and from working forever.
 
+To rename file use the following command : 
+1- git mv 'oldName' 'NewName'
+
 
