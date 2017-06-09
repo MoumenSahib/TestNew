@@ -35,3 +35,11 @@ starts with knowing the name of the repo and link it with your working files.
 1-git remote add origin "URL"
 2-git remote -v
 3-git push origin master
+
+
+To get what last changes are like below :
+1- Use git diff.
+2- you can also use git diff 'FileName'
+This command will show you only the changes in the working ... it would never shows the changes in the repo or in the stage.
+
+
