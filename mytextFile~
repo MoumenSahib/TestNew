@@ -59,5 +59,17 @@ To Create new Dir and move file from old to new use this :
 If you want to know your project url ...
 >> cat .git/config
 
+to start new project on github or connecting to the remote server.
+>> git remote add origin https://wdfldjfldjfdlf.
 
+
+to disconnect from remote server 
+>> git remote rm 'name of project' (origin)
+
+
+to see the project name on gitHub
+>> git remote
+
+to see number and name of branches 
+>> git branch
 

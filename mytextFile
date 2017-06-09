@@ -67,3 +67,14 @@ to disconnect from remote server
 >> git remote rm 'name of project' (origin)
 
 
+to see the project name on gitHub
+>> git remote
+
+to see number and name of branches 
+>> git branch
+
+to clone a project to you pc.
+>> git clone https:/fldfjdfdj;fdj.get myproject2 (for example to change the name of the project)
+
+
+
