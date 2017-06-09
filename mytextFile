@@ -41,7 +41,8 @@ To get what last changes are like below :
 1- Use git diff.
 2- you can also use git diff 'FileName'
 This command will show you only the changes in the working ... it would never shows the changes in the repo or in the stage.
-
+3- to track changes only on the word changes you can use.
+>> git diff --color-word 'filename'
 
 To Remove File from repo.
 1-git rm 'filename'
@@ -49,5 +50,9 @@ To Remove File from repo.
 
 To rename file use the following command : 
 1- git mv 'oldName' 'NewName'
+
+
+To Create new Dir and move file from old to new use this :
+>> git mv 'oldFile' 'newDir'/'newfile'
 
 
