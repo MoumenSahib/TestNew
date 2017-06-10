@@ -1,0 +1,25 @@
+After installing mongodb.
+run 
+>> mongod 
+then run 
+>>mongo (to reach to the database management system)
+
+to see which db are you in:
+>db
+
+to create new database 
+>use 'databasename'
+
+to see all databases.
+
+>show dbs
+
+**** Database can't be shown in the above command until you insert some record to it.
+
+
+to insert data to new table
+
+>db.employees.insert({"name":"Mounes"})
+
+to remove database 
+>
