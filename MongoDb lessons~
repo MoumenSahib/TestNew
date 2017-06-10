@@ -1,0 +1,43 @@
+After installing mongodb.
+run 
+>> mongod 
+then run 
+>>mongo (to reach to the database management system)
+
+to see which db are you in:
+>>db
+
+to create new database 
+>use 'databasename'
+
+to see all databases.
+>>show dbs
+
+to see all collection for certain db (collection = tables)
+>>show collections
+
+to create table (collection) 
+>>db.createCollection(name,options)
+
+to drop it
+>>db.collectionName.drop()
+
+
+
+**** Database can't be shown in the above command until you insert some record to it.
+
+
+to insert data to new table
+
+>>db.employees.insert({"name":"Mounes"})
+
+to insert document you may use json format:
+
+>> db.employees.insert({"name":"Mounes" , "phone" : 123, "age":33,"address" : {"phone":123, "street":"Athureen" , "house No." :10},"Info":[{"Salary":2000,"Location":"Iraq","City":"Baghdad",{"Job function" :"Database Developer", "Working Hours":8}]})
+
+
+
+to insert us
+
+to remove database 
+>> db.dropDatabase() -- which would drop the current use database.
