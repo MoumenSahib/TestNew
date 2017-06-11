@@ -28,12 +28,11 @@ to drop it
 
 
 to insert data to new table
-
 >>db.employees.insert({"name":"Mounes"})
 
 to insert document you may use json format:
 
->> db.employees.insert({"name":"Mounes" , "phone" : 123, "age":33,"address" : {"phone":123, "street":"Athureen" , "house No." :10},"Info":[{"Salary":2000,"Location":"Iraq","City":"Baghdad",{"Job function" :"Database Developer", "Working Hours":8}]})
+>> db.employees.insert({"name":"Mounes" , "phone" : 123, "age":33,"address" : {"phone":123, "street":"Athureen" , "house No" :10},"Info":[{"Salary":2000,"Location":"Iraq","City":"Baghdad"},{"Job function" :"Database Developer", "Working Hours":8}]})
 
 
 
@@ -41,3 +40,43 @@ to insert us
 
 to remove database 
 >> db.dropDatabase() -- which would drop the current use database.
+
+
+to select data from collection
+>> db.collectionName.find()
+>> db.collectionName.find({"name":"Mounes"})
+>> db.collectionName.find().pretty() ----This would show a very good picture..
+
+
+to Update a document
+>> db.collectionName.update({"column":"xyz"},{$set{"anothercolumn":"abc"}});
+                            -----where-----        -------set-------------
+
+to update a document with address which contains multiple records
+>> db.collectionName.update({"column":"xyz"},{$set{"anothercolumn":{"abc":"def"}}});
+
+to delete records from collection
+>> db.collectioName.remove()
+>> db.collectionName.remove({"name":"Mounes"});
+
+to make the same as (TOP) keyword 
+>> db.collectionName.find().limit(1).... this would return only the 1st record.
+
+
+to insert multiple record in the same time..you have to make use of array
+>> db.collectionName.insert([{name:"Mounes" , age:55},{name:"Moumen",age:23}])
+
+to update multiple records in the same time .. you have to make use of either array or updateMany()
+>> db.collectionName.updateMany({name:"Mounes"},{$set:{name:"Mounes",age:30,gender:"female"}})
+
+to update a value with its value + something increment
+>>db.collectionName.update({name:"Mounes"},{$inc:{age:10}})
+
+to delete a column from a record
+>>db.collectionName.update({name:"Mounes"},{$unset:{age:10}})
+
+to update a non exists record with name like "Khaild"
+>> db.collectionName.update({name:"Khalid"},{$set:{name:"Khalid",age:30}},{upsert:true})
+
+
+
