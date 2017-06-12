@@ -1,17 +1,13 @@
 Updates on System needed:
-1-Index out of Range add payment form.
-2-f-iAgentID update sp_finanaforfinalapproval.
-3-add return of compensation.
-4-Permission for users.
-5-Add Excel file for profit and loss.
-6-Fix loan after 8,6 months
-7-Check why Fee Collection Does not return any value.
-8-Setup project.
-9-Add bulk data import.
-10-recreate the assymetric key.
-12-Change Queries to secure one.
-13-make documentation for the software.
-14-do change the payment schedule in case of real estate bank.
+>> add return of compensation.
+>> Permission for users.
+>> Add Excel file for profit and loss.
+>> Clean the database.
+>> recreate the assymetric key.
+>> Change Queries to secure one.
+>> make documentation for the software.
+>> do change the payment schedule in case of real estate bank.
+>> do make Threading for all slow proccesses.
 
 
 

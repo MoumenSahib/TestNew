@@ -36,8 +36,6 @@ to insert document you may use json format:
 
 
 
-to insert us
-
 to remove database 
 >> db.dropDatabase() -- which would drop the current use database.
 
@@ -45,15 +43,15 @@ to remove database
 to select data from collection
 >> db.collectionName.find()
 >> db.collectionName.find({"name":"Mounes"})
->> db.collectionName.find().pretty() ----This would show a very good picture..
+>> db.collectionName.find().pretty() ----This would show a very good figure..
 
 
 to Update a document
->> db.collectionName.update({"column":"xyz"},{$set{"anothercolumn":"abc"}});
+>> db.collectionName.update({"column":"xyz"},{$set:{"anothercolumn":"abc"}});
                             -----where-----        -------set-------------
 
 to update a document with address which contains multiple records
->> db.collectionName.update({"column":"xyz"},{$set{"anothercolumn":{"abc":"def"}}});
+>> db.collectionName.update({"column":"xyz"},{$set:{"anothercolumn":{"abc":"def"}}});
 
 to delete records from collection
 >> db.collectioName.remove()
@@ -79,7 +77,25 @@ to update a non exists record with name like "Khaild"
 >> db.collectionName.update({name:"Khalid"},{$set:{name:"Khalid",age:30}},{upsert:true})
 
 to change column name 
->> db.collectionName.update({name:"Khalid"},{$rename:{age:old}})
+>> db.collectionName.update({name:"Khalid"},{$rename:{age:"old"}})
+
+to user greater than or equal || lower than or equal || lower than || greater than
+>>db.collectionName.find({age:{$lte:30}}) -- Lower than or equal
+>>db.collectionName.find({age:{$gte:30}}) -- greater than or equal
+
+
+to search collection based on 2 condition or more ... you have to make use of array.	
+>> db.collectionName.find({$or:[{name:"Mounes"},{age:40}]})
+
+to sort a record asc (1) desc(-1)
+>> db.collectionName.find().sort({name:1});
+
+to use count ... number of records.
+>> db.collectionName.find().count()
+
+
+to get distinct value of a field
+>> db.collectionName.distinct("name")
 
 
 
