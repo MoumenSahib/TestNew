@@ -1,0 +1,57 @@
+To Navigate Directory use 
+>> ls 
+
+To Navigate Directory with full info use
+>> ls -la      // This will show all the files including the hidden objects.
+>> ls -l       // This will show all the file but not the hidden objects.
+
+
+
+To Create a Directory use 
+>> mkdir "FolderName"
+
+To remove a Direcotry use
+>> rmdir "FolderName"
+
+To create a file use
+>> touch "filename"
+
+To remove a file use
+>> rm "filename"
+
+To get help of anything use
+>> anycommand --help
+
+To copy a file use 
+>> cp "filename" "filename2"    //Create another copy of the file in the same direcotry
+>> cp "filename" "FolderName"/"filename"
+
+
+To move a file use 
+>> mv "filename "filename2" //Actually this will rename your file because you are moving it to the same directory
+>> mv "filename "folderName"/"filname" // this will move your file to another direcotry
+
+To search for a specific word in a file
+>> grep "wordYoulookingFor" "fileYouWantToSearch"
+
+To Look for any file or foleder with space like filename = Mounes Sahib
+you have to surround it with "Mounes Sahib"
+
+To compare between 2 files and see the changes between both of them
+>> diff "filename1" "filename2"
+
+To change password use
+>> passwd
+
+To Get information about any command use
+>> info "command"
+
+To Create,store and display a variable use
+>> Name=Bucky
+Then you can call it
+>> echo $Name
+
+To Save any output of the command into a file use 
+>> "command" > "fileName"  // This will always override the older version.
+>> "command" >> "fileName" // This will append the file with the new output
+
