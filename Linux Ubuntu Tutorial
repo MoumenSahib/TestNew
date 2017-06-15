@@ -60,6 +60,102 @@ To understand the permission
                // the first group is the owner permission ... the second group is the groups permission ... the third group is the public users.
                // the segment in each group represent r : read, w : write, x for execute .. like if you have an executable file you can executed.
                // usually any of the permission types starts either with (-) or (d) ... d : directory , - : file.
+               // usually it is divided when changing permission to (o) other users (g) group (u) user {owner}
 
 
+To change permission on a folder or file use 
+>> chmod o+w "filename" (or "folderName")
+--------(other users + write access)
+>> chmod o-w "filename" (or "foldername")
+
+
+Another way to work with permissions
+>> chmod 754 "filename" (or "folderName")
+---------ugo--------- (u user g group o others)
+
+4 -----(read)
+2 -----(write)
+1 -----(execute)
+0 -----(no permission)
+
+so in the previous example 754 (7 is 4+2+1 for the owner (user) , 5 is 4+1 for the group , 4 is 4 for the other users) and so on...
+
+
+
+To find files or folder in specific path use
+>> find -type f -name Mounes.txt   ---for finding file
+>> find -type d -name Mounes       ---for finding folder
+>> find -name *.txt                ----find all txt files.
+
+To check the hash file checkSum use 
+>> sha1sum "filename"
+
+
+To compress and decompress single file use
+>> gzip "filename"
+>> gunzip "filename"
+
+To compress multiple files use
+>> tar cvf "Tarfile.tar" "filename1" "filename2"----Zip it
+>> tar xvf "Tarfile.tar"---------------------------Extract
+-----------(specify the output file name)-----------------
+
+
+To specify the version of any program you have .. use
+>> 'program name' -version
+
+sudo means : super user do ... he is the root 
+
+
+To Run programs that has .sh files which is shell files use
+>> bash "filename" ... remember all programfiles are in /usr/bin directory.
+
+To create users you have to access the terminal with super user privilage
+>> sudo useradd mom ----User added.
+>> sudo passwd mom -----Add password to the user already created.
+
+
+To create group use
+>> sudo groupadd "GroupName"
+
+To add user to the new Group use
+>> sudo usermod -a -G "GroupName" "userName"
+
+To delete user use
+>> sudo userdel "username"
+
+To delete group use
+>> sudo groupdel "groupName"
+
+To Reach the partitioning of your HDD use
+>> sudo apt-get install gparted ----- to install the software.
+>> sudo gparted.
+
+
+To see the processes work on Terminal use
+>> ps --- this would show only the current processes in the foreground
+>> ps ax --- this would show all the processes even the ones that runs in the background.
+
+if you run any program from the terminal you can not use the terminal again. if so use 
+>> xlogo & --- the & operator enables the terminal back agin for you.... and the program is on the background now ... you cant use the program again until you return it back to the foreground
+
+this again will come with the job number and process number [1] -- job number 2801 process number
+
+To return a process to the foreground use
+>> fg %"job number"
+
+To Kill processes use 
+>> ^C  ------ctrl + c
+
+To Pause Processes use
+>>^Z ----- ctrl +z
+
+To Kill a process using the process number
+>> kill "Process number"
+
+To Stop (pause) it using process number
+>> kill -STOP "process number"
+
+To Unfreez it
+>> kill -CONT "process number"
 
