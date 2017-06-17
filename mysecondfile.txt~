@@ -7,7 +7,12 @@ Updates on System needed:
 >> Change Queries to secure one.
 >> make documentation for the software.
 >> do change the payment schedule in case of real estate bank.
->> do make Threading for all slow proccesses.
+>> do make Threading for all slow proccesses..
+
+
+Important and quickly added
+>> Add referesh Class to all loans forms to refresh the datagrid with the new values it is opened already.
+>> Create proc to _newlyRecievedLoans instead of adding and subtracting 1 in any case.
 
 
 
